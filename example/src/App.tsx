@@ -1,12 +1,10 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'react-native-alphabet';
-
-const result = multiply(3, 7);
+import { View, StyleSheet } from 'react-native';
+import Alphabet from 'react-native-alphabet';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Alphabet data={['A', 'B', 'C']} />
     </View>
   );
 }
@@ -14,7 +12,5 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });

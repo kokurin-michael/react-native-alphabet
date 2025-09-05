@@ -1,8 +1,5 @@
 const path = require('path');
 const { getDefaultConfig } = require('@expo/metro-config');
-const { withMetroConfig } = require('react-native-monorepo-config');
-
-const root = path.resolve(__dirname, '..');
 
 /**
  * Metro configuration
@@ -10,10 +7,17 @@ const root = path.resolve(__dirname, '..');
  *
  * @type {import('metro-config').MetroConfig}
  */
-const config = withMetroConfig(getDefaultConfig(__dirname), {
-  root,
-  dirname: __dirname,
-});
+const config = getDefaultConfig(__dirname);
+
+// Allow resolving the local library from one directory up
+config.resolver.unstable_enableSymlinks = true;
+config.watchFolders = [path.resolve(__dirname, '..')];
+
+// Map the package name to the local library path
+config.resolver.extraNodeModules = {
+  // Point directly to the source folder so you can run without building lib/
+  'react-native-alphabet': path.resolve(__dirname, '..', 'src'),
+};
 
 config.resolver.unstable_enablePackageExports = true;
 
