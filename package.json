@@ -1,5 +1,5 @@
 {
-  "name": "react-native-alphabet",
+  "name": "@kokurin/react-native-alphabet",
   "version": "1.0.0",
   "description": "Alphabet index bar for React Native (iOS/Android). Fast vertical scroll by letters like iOS Contacts. Written in TypeScript.",
   "main": "./lib/module/index.js",
@@ -56,7 +56,8 @@
   },
   "homepage": "https://github.com/kokurin-michael/react-native-alphabet#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^19.6.0",

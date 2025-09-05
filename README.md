@@ -1,4 +1,4 @@
-# react-native-alphabet
+# @kokurin/react-native-alphabet
 
 Fast alphabet index bar for React Native (iOS/Android) — like the iOS Contacts sidebar.
 Lets users quickly jump through long lists by tapping or sliding across letters.
@@ -17,10 +17,10 @@ Fully typed with TypeScript and powered by `react-native-gesture-handler` + `rea
 
 ```bash
 # with yarn
-yarn add react-native-alphabet react-native-gesture-handler react-native-reanimated
+yarn add @kokurin/react-native-alphabet react-native-gesture-handler react-native-reanimated
 
 # with npm
-npm i react-native-alphabet react-native-gesture-handler react-native-reanimated
+npm i @kokurin/react-native-alphabet react-native-gesture-handler react-native-reanimated
 ```
 
 ### Reanimated setup
@@ -58,7 +58,7 @@ export default function App() {
 ```tsx
 import React, { useMemo, useRef } from 'react';
 import { FlatList, Text, View } from 'react-native';
-import Alphabet from 'react-native-alphabet';
+import Alphabet from '@kokurin/react-native-alphabet';
 
 const LETTERS = ['#','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 

@@ -1,5 +1,5 @@
 import { View, StyleSheet } from 'react-native';
-import Alphabet from 'react-native-alphabet';
+import Alphabet from '@kokurin/react-native-alphabet';
 
 export default function App() {
   return (
