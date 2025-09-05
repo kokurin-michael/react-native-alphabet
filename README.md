@@ -1,5 +1,9 @@
 # @kokurin/react-native-alphabet
 
+<p align="center">
+  <img src="./example.gif" alt="Example demo" width="300"/>
+</p>
+
 Fast alphabet index bar for React Native (iOS/Android) — like the iOS Contacts sidebar.
 Lets users quickly jump through long lists by tapping or sliding across letters.
 Fully typed with TypeScript and powered by `react-native-gesture-handler` + `react-native-reanimated`.
