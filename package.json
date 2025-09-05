@@ -1,6 +1,6 @@
 {
   "name": "@kokurin/react-native-alphabet",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Alphabet index bar for React Native (iOS/Android). Fast vertical scroll by letters like iOS Contacts. Written in TypeScript.",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
